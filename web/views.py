@@ -52,7 +52,7 @@ def register_1(request):
                 return redirect('web:login')
            
 
-    return render(request,"web/shop-register.html")
+    return render(request,"web/shop-registration.html")
           
 def login_1(request):
     if request.method=="POST":
@@ -64,7 +64,7 @@ def login_1(request):
             return redirect('web:index')
         else:  
             print('hi')
-            return redirect('web:login')
+            return redirect('web:signup')
     return render(request,"web/shop-login.html")
 
 def logout_1(request):
